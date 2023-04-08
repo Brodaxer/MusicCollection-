@@ -43,6 +43,12 @@ class Song {
         this.genre = genre;
     }
 
+    @Override
+    public String toString() {
+        return title + " - " + artist +" "+ length +
+                "sec," + genre ;
+    }
+
     enum Genre {
         METAL,
         POP,
